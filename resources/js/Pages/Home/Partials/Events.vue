@@ -1,38 +1,38 @@
 <script setup>
 const events = [
     {
-        date: 'SEASONAL',
-        title: 'Halloween Trick or Treat',
-        time: 'October Half Term',
-        location: 'In-Store',
-        tag: 'Seasonal',
+        date: 'MONTHLY',
+        title: 'Espresso Basics Workshop',
+        time: 'First Saturday, 10:00am',
+        location: 'The Roastery',
+        tag: 'Beginner',
         tagColor: 'bg-orange-100 text-orange-700',
         accent: 'bg-orange-500',
     },
     {
-        date: 'SEASONAL',
-        title: 'Santa\'s Grotto Experience',
-        time: 'December',
-        location: 'In-Store',
-        tag: 'Christmas',
-        tagColor: 'bg-red-100 text-red-700',
-        accent: 'bg-red-500',
+        date: 'MONTHLY',
+        title: 'Brew at Home: Pour-Over',
+        time: 'Third Saturday, 10:00am',
+        location: 'The Roastery',
+        tag: 'Home Brewing',
+        tagColor: 'bg-amber-100 text-amber-700',
+        accent: 'bg-amber-500',
     },
     {
-        date: 'YEAR ROUND',
-        title: 'Character Visits',
-        time: 'Check our socials',
-        location: 'In-Store',
-        tag: 'Kids',
-        tagColor: 'bg-purple-100 text-purple-700',
-        accent: 'bg-candy-purple',
+        date: 'WEEKLY',
+        title: 'Cupping & Tasting Session',
+        time: 'Fridays, 4:00pm',
+        location: 'The Roastery',
+        tag: 'Tasting',
+        tagColor: 'bg-stone-100 text-stone-700',
+        accent: 'bg-bean-caramel',
     },
     {
-        date: 'AVAILABLE NOW',
-        title: 'Pick \'n\' Mix Trailer Hire',
-        time: 'Weddings & Events',
-        location: 'Your Venue',
-        tag: 'Hire',
+        date: 'BY ARRANGEMENT',
+        title: 'Roastery Tours',
+        time: 'Groups welcome',
+        location: 'The Roastery',
+        tag: 'Tour',
         tagColor: 'bg-brand-100 text-brand-700',
         accent: 'bg-brand-500',
     },
@@ -40,13 +40,13 @@ const events = [
 </script>
 
 <template>
-    <section id="events" class="py-20 bg-gradient-to-b from-brand-50 to-white">
+    <section id="workshops" class="py-20 bg-gradient-to-b from-brand-50 to-white">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex items-end justify-between mb-14">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-500 mb-3 block">Events &amp; Hire</span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-500 mb-3 block">Workshops &amp; Tastings</span>
                     <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-warm-900">
-                        What's <span class="text-gradient-candy">on</span>
+                        What's <span class="text-gradient-coffee">on</span>
                     </h2>
                 </div>
                 <a href="#contact"

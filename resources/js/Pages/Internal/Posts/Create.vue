@@ -52,7 +52,7 @@ function submit() {
                 <div>
                     <label class="block text-xs font-semibold text-warm-700 mb-1.5">Title</label>
                     <input v-model="form.title" @blur="autoSlug" type="text" required
-                           placeholder="e.g. Community clean-up day this Saturday"
+                           placeholder="e.g. New Ethiopian single origin now in stock"
                            class="w-full px-4 py-2.5 text-sm border rounded-xl bg-white text-warm-900
                                   focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition placeholder-warm-300"
                            :class="form.errors.title ? 'border-rose-300' : 'border-warm-200'" />
@@ -61,7 +61,7 @@ function submit() {
 
                 <div>
                     <label class="block text-xs font-semibold text-warm-700 mb-1.5">Slug</label>
-                    <input v-model="form.slug" type="text" required placeholder="community-clean-up-day"
+                    <input v-model="form.slug" type="text" required placeholder="new-ethiopian-single-origin"
                            class="w-full px-4 py-2.5 text-sm border rounded-xl bg-white text-warm-900 font-mono
                                   focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition placeholder-warm-300"
                            :class="form.errors.slug ? 'border-rose-300' : 'border-warm-200'" />

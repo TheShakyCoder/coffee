@@ -37,10 +37,10 @@ onUnmounted(() => {
 
                     <!-- Logo -->
                     <a href="/" class="flex items-center gap-3 shrink-0">
-                        <img src="/media/logo.png" alt="Acme Sweets Logo" class="h-14 w-auto" />
+                        <img src="/media/logo.png" alt="Acme Coffee Roasters Logo" class="h-14 w-auto" />
                         <div class="hidden md:block">
-                            <p class="text-lg font-semibold text-brand-600 leading-tight font-display">Acme</p>
-                            <p class="text-md text-candy-purple tracking-wider leading-tight font-display">Sweets</p>
+                            <p class="text-lg font-semibold text-brand-700 leading-tight font-display">Acme</p>
+                            <p class="text-md text-bean-caramel tracking-wider leading-tight font-display">Coffee Roasters</p>
                         </div>
                     </a>
 
@@ -84,9 +84,9 @@ onUnmounted(() => {
                             class="px-2 py-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
                         Dashboard
                         </Link>
-                        <a href="#contact"
-                            class="px-5 py-2.5 text-white text-sm font-bold rounded-xl hover:opacity-90 transition-all shadow-md" style="background: linear-gradient(135deg, #ff1a75, #d946ef)">
-                            Visit Us
+                        <a href="#coffee"
+                            class="px-5 py-2.5 text-white text-sm font-bold rounded-xl hover:opacity-90 transition-all shadow-md" style="background: linear-gradient(135deg, #6f4422, #2a190e)">
+                            Shop Coffee
                         </a>
                     </div>
 
@@ -134,9 +134,9 @@ onUnmounted(() => {
                         class="block px-4 py-2.5 text-sm font-medium text-brand-600 rounded-lg hover:bg-brand-50 transition-colors">
                     Login
                     </Link>
-                    <a href="#contact"
-                        class="block text-center px-4 py-2.5 bg-brand-500 text-white text-sm font-semibold rounded-xl hover:bg-brand-600 transition-colors">
-                        Visit Us
+                    <a href="#coffee"
+                        class="block text-center px-4 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors">
+                        Shop Coffee
                     </a>
                 </div>
             </div>

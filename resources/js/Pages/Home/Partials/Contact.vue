@@ -9,8 +9,8 @@ defineProps({
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
                 <span class="text-xs font-semibold uppercase tracking-widest text-brand-500 mb-3 block">Find Us</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-warm-900">Come and say <span class="text-gradient-candy">hello</span></h2>
-                <p class="text-warm-500 mt-4 max-w-xl mx-auto">Pop in for a browse, call ahead, or drop us a message on social media. We'd love to see you!</p>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-warm-900">Come and say <span class="text-gradient-coffee">hello</span></h2>
+                <p class="text-warm-500 mt-4 max-w-xl mx-auto">Questions about our coffee, subscriptions or wholesale? Drop us a message, give us a call, or find us on social media.</p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
@@ -92,10 +92,10 @@ defineProps({
                         <select
                             class="w-full px-4 py-2.5 text-sm border border-warm-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition text-warm-600">
                             <option>General enquiry</option>
-                            <option>Event / trailer hire</option>
-                            <option>Party orders</option>
-                            <option>Sweet hampers &amp; gifts</option>
-                            <option>Wedding sweets</option>
+                            <option>Subscriptions</option>
+                            <option>Wholesale &amp; trade</option>
+                            <option>Workshops &amp; tastings</option>
+                            <option>Gifts &amp; bundles</option>
                             <option>Other</option>
                         </select>
                     </div>
@@ -105,7 +105,7 @@ defineProps({
                             class="w-full px-4 py-2.5 text-sm border border-warm-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition resize-none"></textarea>
                     </div>
                     <button type="submit"
-                        class="w-full py-3.5 text-white font-bold rounded-xl hover:opacity-90 transition-all text-sm shadow-lg" style="background: linear-gradient(135deg, #ff1a75, #d946ef)">
+                        class="w-full py-3.5 text-white font-bold rounded-xl hover:opacity-90 transition-all text-sm shadow-lg" style="background: linear-gradient(135deg, #6f4422, #2a190e)">
                         Send Message
                     </button>
                 </form>

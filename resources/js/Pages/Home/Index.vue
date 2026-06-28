@@ -40,10 +40,10 @@ const navLinks = page.props.site.nav_links;
         <!-- ABOUT -->
         <About />
 
-        <!-- OUR SWEETS -->
+        <!-- OUR COFFEE -->
         <Services />
 
-        <!-- EVENTS & HIRE -->
+        <!-- WORKSHOPS & TASTINGS -->
         <Events />
 
         <!-- NEWS -->
@@ -52,7 +52,7 @@ const navLinks = page.props.site.nav_links;
         <!-- INSTAGRAM FEED -->
         <InstagramFeed />
 
-        <!-- WEDDINGS & EVENTS CTA -->
+        <!-- SUBSCRIPTIONS CTA -->
         <Volunteer />
 
         <!-- CONTACT -->

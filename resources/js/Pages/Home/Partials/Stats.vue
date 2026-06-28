@@ -1,9 +1,9 @@
 <script setup>
 const stats = [
-    { value: '90+', label: 'Pick \'n\' mix varieties', color: 'from-brand-400 to-brand-600', shadow: 'shadow-brand-400/20' },
-    { value: '100s', label: 'Of American imports', color: 'from-candy-purple to-candy-magenta', shadow: 'shadow-candy-purple/20' },
-    { value: '1000s', label: 'Happy customers', color: 'from-candy-orange to-candy-red', shadow: 'shadow-candy-orange/20' },
-    { value: '5⭐', label: 'Rated on Google', color: 'from-accent-400 to-accent-600', shadow: 'shadow-accent-400/20' },
+    { value: '12+', label: 'Single-origin coffees', color: 'from-brand-400 to-brand-600', shadow: 'shadow-brand-400/20' },
+    { value: '48h', label: 'Roasted to dispatch', color: 'from-bean-mocha to-bean-caramel', shadow: 'shadow-bean-mocha/20' },
+    { value: '1000s', label: 'Bags delivered', color: 'from-bean-rust to-bean-gold', shadow: 'shadow-bean-rust/20' },
+    { value: '5⭐', label: 'Customer rating', color: 'from-accent-400 to-accent-600', shadow: 'shadow-accent-400/20' },
 ];
 </script>
 

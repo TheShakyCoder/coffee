@@ -20,7 +20,7 @@ const statusLabel = {
 </script>
 
 <template>
-    <Head title="Competitions — Acme Sweets" />
+    <Head title="Competitions — Acme Coffee Roasters" />
 
     <div class="font-sans antialiased text-warm-800 bg-white">
 
@@ -44,7 +44,7 @@ const statusLabel = {
                 </nav>
                 <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">Competitions</h1>
                 <p class="text-white/75 text-lg max-w-xl leading-relaxed">
-                    Enter our community competitions and show off your talent.
+                    Enter our competitions for the chance to win coffee and more.
                 </p>
             </div>
             <div class="absolute bottom-0 left-0 right-0">

@@ -18,18 +18,20 @@ export default {
                 display: ['Poppins', ...defaultTheme.fontFamily.sans],
             },
             colors: {
+                // Coffee — roasted bean browns, used as the primary brand colour.
                 brand: {
-                    50:  '#fff0f6',
-                    100: '#ffe0ed',
-                    200: '#ffc2db',
-                    300: '#ff8abb',
-                    400: '#ff4d94',
-                    500: '#ff1a75',
-                    600: '#e60066',
-                    700: '#c20055',
-                    800: '#9e0046',
-                    900: '#78003a',
+                    50:  '#faf6f2',
+                    100: '#f0e6db',
+                    200: '#e0cab3',
+                    300: '#c9a682',
+                    400: '#b07d4f',
+                    500: '#8a5a2b',
+                    600: '#6f4422',
+                    700: '#57341b',
+                    800: '#3f2615',
+                    900: '#2a190e',
                 },
+                // Caramel / golden crema accent.
                 accent: {
                     50:  '#fffbeb',
                     100: '#fff3c4',
@@ -40,15 +42,16 @@ export default {
                     600: '#e09100',
                     700: '#b87300',
                 },
-                candy: {
-                    purple: '#8b5cf6',
-                    magenta: '#d946ef',
-                    blue:   '#06b6d4',
-                    green:  '#10b981',
-                    orange: '#f97316',
-                    red:    '#ef4444',
-                    yellow: '#fbbf24',
-                    pink:   '#f472b6',
+                // Supporting tones for cards, badges and accents.
+                bean: {
+                    espresso: '#2a190e',
+                    mocha:    '#6f4422',
+                    caramel:  '#b07d4f',
+                    crema:    '#e8d4b8',
+                    sage:     '#7c8a6b',
+                    leaf:     '#5b7553',
+                    rust:     '#b5552d',
+                    gold:     '#d8a13a',
                 },
                 warm: {
                     50:  '#fafaf9',

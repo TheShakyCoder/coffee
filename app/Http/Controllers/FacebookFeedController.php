@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 class FacebookFeedController extends Controller
 {
     /**
-     * Return recent Facebook posts for the charity page.
+     * Return recent Facebook posts for the brand page.
      * Results are cached for 30 minutes to avoid hammering the API.
      */
     public function index(): JsonResponse

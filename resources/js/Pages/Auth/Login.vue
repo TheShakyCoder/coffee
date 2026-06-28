@@ -23,7 +23,7 @@ const submit = () => {
 </script>
 
 <template>
-    <GuestLayout title="Welcome back" subtitle="Sign in to the Acme Sweets portal">
+    <GuestLayout title="Welcome back" subtitle="Sign in to the Acme Coffee Roasters portal">
         <Head title="Login" />
 
         <!-- Status message (e.g. after password reset) -->

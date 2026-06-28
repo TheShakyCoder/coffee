@@ -4,23 +4,23 @@ import { Link } from '@inertiajs/vue3';
 const news = [
     {
         date: '1 May 2026',
-        title: 'New American candy shipment just landed',
-        excerpt: 'We\'ve got a fresh batch of viral TikTok snacks, Takis, and limited-edition Reese\'s flavours — grab them before they\'re gone!',
-        tag: 'New Stock',
+        title: 'New seasonal Ethiopian single origin has landed',
+        excerpt: 'A bright, floral natural-process lot with notes of blueberry and jasmine — roasted light for filter. Available now while stocks last.',
+        tag: 'New Coffee',
         tagColor: 'bg-brand-100 text-brand-700',
     },
     {
         date: '15 Apr 2026',
-        title: 'Pick \'n\' mix trailer now available for hire',
-        excerpt: 'Bring the pick \'n\' mix experience to your wedding, party, or corporate event. Our mobile sweet shop is ready to roll!',
-        tag: 'Hire',
-        tagColor: 'bg-purple-100 text-purple-700',
+        title: 'Subscriptions just got more flexible',
+        excerpt: 'Choose your grind, swap your beans each delivery, and pause whenever you like. Fresh coffee on your schedule, never a bag too many.',
+        tag: 'Subscriptions',
+        tagColor: 'bg-stone-100 text-stone-700',
     },
     {
         date: '1 Apr 2026',
-        title: 'Summer sweet hampers now available',
-        excerpt: 'The perfect gift for any sweet tooth — our handmade hampers are packed with a mix of retro, American, and pick \'n\' mix favourites.',
-        tag: 'Gifts',
+        title: 'Spring brewing workshops now open for booking',
+        excerpt: 'Master espresso or dial in your pour-over with our hands-on sessions at the roastery. Small groups, expert guidance, plenty of coffee.',
+        tag: 'Workshops',
         tagColor: 'bg-amber-100 text-amber-700',
     },
 ];
@@ -34,7 +34,7 @@ const news = [
                     <span class="text-xs font-semibold uppercase tracking-widest text-brand-500 mb-3 block">Latest
                         News</span>
                     <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-warm-900">
-                        What's <span class="text-gradient-candy">new</span> in the shop
+                        What's <span class="text-gradient-coffee">new</span> at the roastery
                     </h2>
                 </div>
                 <Link href="/news-updates"

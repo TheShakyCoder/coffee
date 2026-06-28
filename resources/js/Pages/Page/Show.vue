@@ -16,7 +16,7 @@ const props = defineProps({
 
 <template>
     <Head
-        :title="`${page.title} — Acme Sweets`"
+        :title="`${page.title} — Acme Coffee Roasters`"
         :description="page.description"
     />
 

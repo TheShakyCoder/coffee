@@ -44,24 +44,24 @@ const indexLinks = computed(() => {
 });
 
 const stats = [
-    { label: 'Upcoming Events', value: '4', icon: '📅', change: '+2 this week', trend: 'up', color: 'bg-brand-50 border-brand-200', iconBg: 'bg-brand-100', valueColor: 'text-brand-700' },
-    { label: 'Active Members', value: '1,248', icon: '👥', change: '+12 this month', trend: 'up', color: 'bg-sky-50 border-sky-200', iconBg: 'bg-sky-100', valueColor: 'text-sky-700' },
+    { label: 'Upcoming Workshops', value: '4', icon: '📅', change: '+2 this week', trend: 'up', color: 'bg-brand-50 border-brand-200', iconBg: 'bg-brand-100', valueColor: 'text-brand-700' },
+    { label: 'Active Subscribers', value: '1,248', icon: '👥', change: '+12 this month', trend: 'up', color: 'bg-sky-50 border-sky-200', iconBg: 'bg-sky-100', valueColor: 'text-sky-700' },
     { label: 'News Articles', value: '18', icon: '📰', change: '3 drafts pending', trend: 'neutral', color: 'bg-purple-50 border-purple-200', iconBg: 'bg-purple-100', valueColor: 'text-purple-700' },
-    { label: 'Volunteers', value: '152', icon: '🤝', change: '+5 new sign-ups', trend: 'up', color: 'bg-accent-50 border-orange-200', iconBg: 'bg-orange-100', valueColor: 'text-orange-700' },
+    { label: 'Orders This Week', value: '152', icon: '📦', change: '+5 vs last week', trend: 'up', color: 'bg-accent-50 border-orange-200', iconBg: 'bg-orange-100', valueColor: 'text-orange-700' },
 ];
 
 const recentActivity = [
-    { action: 'New member registered', detail: 'Sarah Thompson joined the community', time: '2 mins ago', icon: '👤', color: 'bg-brand-100 text-brand-700' },
-    { action: 'Event created', detail: '"Spring Community Fair" added for 12 Apr', time: '1 hour ago', icon: '📅', color: 'bg-sky-100 text-sky-700' },
-    { action: 'News article published', detail: 'Sensory garden opening published', time: '3 hours ago', icon: '📰', color: 'bg-purple-100 text-purple-700' },
-    { action: 'Donation received', detail: '£50 received via online form', time: 'Yesterday', icon: '💚', color: 'bg-green-100 text-green-700' },
-    { action: 'Venue hire booking', detail: 'Main hall booked for 19 Apr', time: 'Yesterday', icon: '🏛️', color: 'bg-amber-100 text-amber-700' },
+    { action: 'New subscriber', detail: 'Sarah Thompson started a monthly subscription', time: '2 mins ago', icon: '👤', color: 'bg-brand-100 text-brand-700' },
+    { action: 'Workshop scheduled', detail: '"Espresso Basics" added for 12 Apr', time: '1 hour ago', icon: '📅', color: 'bg-sky-100 text-sky-700' },
+    { action: 'News article published', detail: 'New Ethiopian single origin published', time: '3 hours ago', icon: '📰', color: 'bg-purple-100 text-purple-700' },
+    { action: 'Order received', detail: '£42 order placed via online shop', time: 'Yesterday', icon: '☕', color: 'bg-green-100 text-green-700' },
+    { action: 'Wholesale enquiry', detail: 'New trade enquiry from a local café', time: 'Yesterday', icon: '🏪', color: 'bg-amber-100 text-amber-700' },
 ];
 
 </script>
 
 <template>
-    <Head title="Dashboard — Acme Sweets Admin" />
+    <Head title="Dashboard — Acme Coffee Roasters Admin" />
 
     <AuthenticatedLayout title="Internal Dashboard">
         <template #header>
@@ -135,30 +135,30 @@ const recentActivity = [
             <!-- Right column -->
             <div class="space-y-5">
 
-                <!-- Charity info card -->
-                <div class="bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl p-5 text-white">
+                <!-- Brand info card -->
+                <div class="bg-gradient-to-br from-brand-600 to-brand-800 rounded-2xl p-5 text-white">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="/media/logo.png" alt="Acme Sweets" class="h-12 w-auto brightness-0 invert opacity-90" />
+                        <img src="/media/logo.png" alt="Acme Coffee Roasters" class="h-12 w-auto brightness-0 invert opacity-90" />
                         <div>
-                            <p class="font-semibold text-sm font-display">Acme Sweets</p>
+                            <p class="font-semibold text-sm font-display">Acme Coffee Roasters</p>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-3 text-center">
                         <div class="bg-white/15 rounded-xl p-3">
                             <p class="text-lg font-bold font-display">1,248</p>
-                            <p class="text-white/70 text-xs">Members</p>
+                            <p class="text-white/70 text-xs">Subscribers</p>
                         </div>
                         <div class="bg-white/15 rounded-xl p-3">
                             <p class="text-lg font-bold font-display">152</p>
-                            <p class="text-white/70 text-xs">Volunteers</p>
+                            <p class="text-white/70 text-xs">Orders this week</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Upcoming events mini list -->
+                <!-- Upcoming workshops mini list -->
                 <div class="bg-white rounded-2xl border border-warm-200 shadow-sm overflow-hidden">
                     <div class="px-5 py-4 border-b border-warm-100">
-                        <h2 class="font-semibold text-warm-900 text-sm">Next Events</h2>
+                        <h2 class="font-semibold text-warm-900 text-sm">Next Workshops</h2>
                     </div>
                     <div class="divide-y divide-warm-50">
                         <div class="flex items-center gap-3 px-5 py-3">
@@ -167,8 +167,8 @@ const recentActivity = [
                                 <p class="text-lg font-bold text-warm-900 leading-none">12</p>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-sm font-medium text-warm-800 truncate">Spring Community Fair</p>
-                                <p class="text-xs text-warm-400">10:00 – Main Hall</p>
+                                <p class="text-sm font-medium text-warm-800 truncate">Espresso Basics Workshop</p>
+                                <p class="text-xs text-warm-400">10:00 – The Roastery</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 px-5 py-3">
@@ -177,8 +177,8 @@ const recentActivity = [
                                 <p class="text-lg font-bold text-warm-900 leading-none">16</p>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-sm font-medium text-warm-800 truncate">Senior Coffee Morning</p>
-                                <p class="text-xs text-warm-400">09:30 – Café</p>
+                                <p class="text-sm font-medium text-warm-800 truncate">Cupping &amp; Tasting Session</p>
+                                <p class="text-xs text-warm-400">09:30 – The Roastery</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 px-5 py-3">
@@ -187,13 +187,13 @@ const recentActivity = [
                                 <p class="text-lg font-bold text-warm-900 leading-none">25</p>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-sm font-medium text-warm-800 truncate">Youth Film Night</p>
-                                <p class="text-xs text-warm-400">18:00 – Activity Room</p>
+                                <p class="text-sm font-medium text-warm-800 truncate">Brew at Home: Pour-Over</p>
+                                <p class="text-xs text-warm-400">18:00 – The Roastery</p>
                             </div>
                         </div>
                     </div>
                     <div class="px-5 py-3 border-t border-warm-100">
-                        <a href="#" class="text-xs font-medium text-brand-600 hover:text-brand-800 transition-colors">Manage events →</a>
+                        <a href="#" class="text-xs font-medium text-brand-600 hover:text-brand-800 transition-colors">Manage workshops →</a>
                     </div>
                 </div>
 

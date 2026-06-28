@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(ddev artisan:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:threesisterscoffee.co.uk)",
+      "Bash(xargs perl -i -pe 's/Acme Sweets/Acme Coffee Roasters/g')",
+      "Bash(npm run *)",
+      "Bash(cd *)",
+      "Bash(node --check tailwind.config.js)",
+      "Bash(node --check vite.config.js)"
     ]
   }
 }
