@@ -16,7 +16,7 @@ const page = usePage();
             <div class="grid md:grid-cols-4 gap-10 mb-10">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="/media/logo.png" alt="Acme Coffee Roasters Logo" class="h-14 w-auto brightness-0 invert opacity-90" />
+                        <img src="/media/logo.svg" alt="Acme Coffee Roasters Logo" class="h-14 w-auto brightness-0 invert opacity-90" />
                         <div>
                             <p class="font-semibold text-white font-display">Acme</p>
                             <p class="text-sm text-brand-300 font-display">Coffee Roasters</p>

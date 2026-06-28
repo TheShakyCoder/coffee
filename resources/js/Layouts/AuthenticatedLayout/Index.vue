@@ -58,7 +58,7 @@ onMounted(() => {
                             class="flex items-center gap-3"
                         >
                             <img
-                                src="/media/logo.png"
+                                src="/media/logo.svg"
                                 alt="Acme Coffee Roasters"
                                 class="h-10 w-auto"
                             />

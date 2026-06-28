@@ -44,7 +44,7 @@ function tagColour(index) {
             <!-- Faint background logo -->
             <div class="absolute right-[-40px] top-1/2 w-72 h-72 pointer-events-none select-none"
                  style="transform: translateY(-50%) rotate(15deg);">
-                <img src="/media/logo.png" alt="" class="w-full h-full object-contain opacity-20" />
+                <img src="/media/logo.svg" alt="" class="w-full h-full object-contain opacity-20" />
             </div>
 
             <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">

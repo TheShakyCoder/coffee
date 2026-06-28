@@ -8,7 +8,10 @@
       "Bash(npm run *)",
       "Bash(cd *)",
       "Bash(node --check tailwind.config.js)",
-      "Bash(node --check vite.config.js)"
+      "Bash(node --check vite.config.js)",
+      "Bash(xargs perl -i -pe 's{/media/logo\\\\.png}{/media/logo.svg}g')",
+      "Bash(xmllint --noout public/media/logo.svg)",
+      "Bash(command -v rsvg-convert magick convert)"
     ]
   }
 }

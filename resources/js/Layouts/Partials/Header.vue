@@ -37,7 +37,7 @@ onUnmounted(() => {
 
                     <!-- Logo -->
                     <a href="/" class="flex items-center gap-3 shrink-0">
-                        <img src="/media/logo.png" alt="Acme Coffee Roasters Logo" class="h-14 w-auto" />
+                        <img src="/media/logo.svg" alt="Acme Coffee Roasters Logo" class="h-14 w-auto" />
                         <div class="hidden md:block">
                             <p class="text-lg font-semibold text-brand-700 leading-tight font-display">Acme</p>
                             <p class="text-md text-bean-caramel tracking-wider leading-tight font-display">Coffee Roasters</p>

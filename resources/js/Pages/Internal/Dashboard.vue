@@ -138,7 +138,7 @@ const recentActivity = [
                 <!-- Brand info card -->
                 <div class="bg-gradient-to-br from-brand-600 to-brand-800 rounded-2xl p-5 text-white">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="/media/logo.png" alt="Acme Coffee Roasters" class="h-12 w-auto brightness-0 invert opacity-90" />
+                        <img src="/media/logo.svg" alt="Acme Coffee Roasters" class="h-12 w-auto brightness-0 invert opacity-90" />
                         <div>
                             <p class="font-semibold text-sm font-display">Acme Coffee Roasters</p>
                         </div>

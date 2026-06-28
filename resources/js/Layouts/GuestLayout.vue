@@ -30,7 +30,7 @@ defineProps({
             <!-- Centre content -->
             <div class="relative flex-1 flex flex-col justify-center px-10 xl:px-14">
                 <Link href="/" class="flex items-center gap-4 mb-10">
-                    <img src="/media/logo.png" alt="Acme Coffee Roasters Logo" class="h-16 w-auto brightness-0 invert opacity-90" />
+                    <img src="/media/logo.svg" alt="Acme Coffee Roasters Logo" class="h-16 w-auto brightness-0 invert opacity-90" />
                     <div>
                         <p class="font-display font-bold text-lg leading-tight">Acme Coffee Roasters</p>
                     </div>
@@ -69,7 +69,7 @@ defineProps({
             <!-- Mobile header -->
             <div class="lg:hidden flex items-center justify-between px-6 pt-6 pb-4">
                 <Link href="/" class="flex items-center gap-3">
-                    <img src="/media/logo.png" alt="Acme Coffee Roasters Logo" class="h-10 w-auto" />
+                    <img src="/media/logo.svg" alt="Acme Coffee Roasters Logo" class="h-10 w-auto" />
                     <div>
                         <p class="font-display font-semibold text-brand-600 text-sm leading-tight">Acme Coffee Roasters</p>
                     </div>

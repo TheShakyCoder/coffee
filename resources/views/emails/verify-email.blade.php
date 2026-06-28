@@ -31,7 +31,7 @@
                         <td style="background:linear-gradient(135deg,#6f4422 0%,#57341b 50%,#2a190e 100%);padding:40px 40px 36px;text-align:center;">
 
                             <!-- Logo -->
-                            <img src="{{ config('app.url') }}/media/logo.png"
+                            <img src="{{ config('app.url') }}/media/logo.svg"
                                  alt="Acme Coffee Roasters"
                                  width="80" height="80"
                                  style="width:80px;height:80px;object-fit:contain;border-radius:50%;background-color:rgba(255,255,255,0.15);padding:6px;display:block;margin:0 auto 16px;" />
