@@ -84,10 +84,10 @@ onUnmounted(() => {
                             class="px-2 py-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
                         Dashboard
                         </Link>
-                        <a href="#coffee"
+                        <Link href="/shop"
                             class="px-5 py-2.5 text-white text-sm font-bold rounded-xl hover:opacity-90 transition-all shadow-md" style="background: linear-gradient(135deg, #6f4422, #2a190e)">
                             Shop Coffee
-                        </a>
+                        </Link>
                     </div>
 
                     <!-- Mobile hamburger -->
@@ -134,10 +134,10 @@ onUnmounted(() => {
                         class="block px-4 py-2.5 text-sm font-medium text-brand-600 rounded-lg hover:bg-brand-50 transition-colors">
                     Login
                     </Link>
-                    <a href="#coffee"
+                    <Link href="/shop" @click="mobileMenuOpen = false"
                         class="block text-center px-4 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors">
                         Shop Coffee
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>

@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Middleware\HandleInertiaRequests;
+use App\Http\Middleware\LogPageView;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets;
 use Illuminate\Http\Request;
 use Sentry\Laravel\Integration;
 
@@ -14,9 +17,14 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(append: [
-            \App\Http\Middleware\HandleInertiaRequests::class,
-            \Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets::class,
-            \App\Http\Middleware\LogPageView::class,
+            HandleInertiaRequests::class,
+            AddLinkHeadersForPreloadedAssets::class,
+            LogPageView::class,
+        ]);
+
+        // Stripe posts to the Cashier webhook without a CSRF token.
+        $middleware->validateCsrfTokens(except: [
+            'stripe/*',
         ]);
 
         // Trust Coolify's reverse proxy so Laravel honors
@@ -33,7 +41,5 @@ return Application::configure(basePath: dirname(__DIR__))
         );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-         Integration::handles($exceptions);
+        Integration::handles($exceptions);
     })->create();
-
-

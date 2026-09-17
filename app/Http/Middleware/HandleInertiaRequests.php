@@ -2,12 +2,9 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\MenuItem;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
-use Illuminate\Support\Facades\Route;
-use App\Models\MenuItem;
-use App\Models\User;
-use App\Models\Post;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -33,7 +30,7 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
-        if($request->user()) {
+        if ($request->user()) {
             $can = $request->user()->getPermissions();
         }
 
@@ -54,12 +51,14 @@ class HandleInertiaRequests extends Middleware
 
         return [
             ...parent::share($request),
+            'csrf_token' => csrf_token(),
             'auth' => [
                 'user' => $request->user(),
+                'subscribed' => (bool) $request->user()?->subscribed('default'),
             ],
             'flash' => [
                 'success' => $request->session()->get('success'),
-                'error'   => $request->session()->get('error'),
+                'error' => $request->session()->get('error'),
             ],
             'site' => [
                 'fullname' => config('site.fullname'),

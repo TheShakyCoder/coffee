@@ -28,14 +28,14 @@
                 cancel any time.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#coffee"
+                <a href="/subscriptions"
                     class="group px-8 py-4 bg-white text-brand-700 font-bold rounded-2xl hover:bg-accent-300 hover:text-brand-900 transition-all duration-200 shadow-xl shadow-black/10 text-sm inline-flex items-center gap-2">
                     Start a Subscription
                     <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                 </a>
-                <a href="#coffee"
+                <a href="/shop"
                     class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-md text-white font-bold rounded-2xl hover:bg-white/20 transition-all duration-200 border border-white/25 text-sm">
                     ☕ Shop One-Off Bags
                 </a>

@@ -24,6 +24,18 @@ Route::get('/api/facebook-feed', [FacebookFeedController::class, 'index'])->name
 
 Route::get('/calendar', [\App\Http\Controllers\CalendarController::class, 'index'])->name('calendar');
 
+//  SHOP & SUBSCRIPTIONS (Stripe / Cashier)
+Route::get('/shop', [\App\Http\Controllers\ShopController::class, 'index'])->name('shop.index');
+Route::post('/shop/checkout', [\App\Http\Controllers\CheckoutController::class, 'product'])->name('shop.checkout');
+Route::get('/subscriptions', [\App\Http\Controllers\SubscriptionController::class, 'index'])->name('subscriptions.index');
+Route::get('/checkout/success', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('checkout.success');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::post('/subscriptions/checkout', [\App\Http\Controllers\SubscriptionController::class, 'checkout'])->name('subscriptions.checkout');
+    Route::get('/account/billing', [\App\Http\Controllers\BillingController::class, 'index'])->name('account.billing');
+    Route::get('/account/billing/portal', [\App\Http\Controllers\BillingController::class, 'portal'])->name('account.billing.portal');
+});
+
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

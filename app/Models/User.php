@@ -2,21 +2,22 @@
 
 namespace App\Models;
 
+use App\Concerns\TracksFieldChanges;
 use App\Notifications\VerifyEmailNotification;
+use App\Traits\HasPermissions;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use App\Traits\HasPermissions;
-use App\Concerns\TracksFieldChanges;
+use Laravel\Cashier\Billable;
 
 #[Fillable(['name', 'email', 'password'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasFactory, Notifiable, HasPermissions, TracksFieldChanges;
+    use Billable, HasFactory, HasPermissions, Notifiable, TracksFieldChanges;
 
     /** Never log password or token changes to the audit table. */
     protected array $untracked = ['password', 'remember_token'];
